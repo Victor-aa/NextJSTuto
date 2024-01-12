@@ -11,17 +11,10 @@ import {
 import { Button } from '@/app/ui/button';
 import { createInvoice } from '@/app/lib/actions';
 import { useFormState } from 'react-dom';
-<<<<<<< HEAD
  
 export default function Form({ customers }: { customers: CustomerField[] }) {
   const initialState = { message: null, errors: {} };
   const [state, dispatch] = useFormState(createInvoice, initialState);
-=======
-
-export default function Form({ customers }: { customers: CustomerField[] }) {
-    const initialState = { message: null, errors: {} };
-    const [state, dispatch] = useFormState(createInvoice, initialState);
->>>>>>> fa82906880748c9e6927ffd72c8644ca3b4ee71d
   return (
     <form action={dispatch}>
       <div className="rounded-md bg-gray-50 p-4 md:p-6">
@@ -50,7 +43,6 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
             <UserCircleIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500" />
           </div>
           <div id="customer-error" aria-live="polite" aria-atomic="true">
-<<<<<<< HEAD
             {state.errors?.customerId &&
               state.errors.customerId.map((error: string) => (
                 <p className="mt-2 text-sm text-red-500" key={error}>
@@ -59,16 +51,6 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
               ))
             }
           </div>
-=======
-        {state.errors?.customerId &&
-          state.errors.customerId.map((error: string) => (
-            <p className="mt-2 text-sm text-red-500" key={error}>
-              {error}
-            </p>
-          ))}
-      </div>
-
->>>>>>> fa82906880748c9e6927ffd72c8644ca3b4ee71d
         </div>
  
         {/* Invoice Amount */}
@@ -143,9 +125,4 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
       </div>
     </form>
   );
-<<<<<<< HEAD
 }
-=======
-}
-
->>>>>>> fa82906880748c9e6927ffd72c8644ca3b4ee71d
