@@ -34,7 +34,7 @@ changement effectuer dans lib/data.ts et ui/dashboard/cards.tsx
    Note : basez-vous sur /dashboard/invoices. Vous pouvez reprendre des composants déjà présents ou si besoin en dupliquer/modifier 
    pour l'adapater aux données.
 
-Création d'un fichier ui/invoices/tableCustomers.tsx et modification de dashboard/customers/page.tsx
+modif dans ui/customers/table.tsx 
 
 5. /dashboard/customers
    Modifier votre affichage pour faire apparaître en plus pour chaque client le nombre de factures qu'il a déjà payé et le nombre
